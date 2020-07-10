@@ -40,8 +40,8 @@
 | Body                          | Text                    | Not Null            |
 | Meta Description              | String(512)             | Null                |
 | Keywords                      | String(512)             | Null                |
-| Comment Count                 | Unsigned Integer(0)     | 0                   |
-| Visit Count                   | Unsigned Integer(0)     | 0                   |
+| Comment Count                 | Unsigned Integer        | 0                   |
+| Visit Count                   | Unsigned Integer        | 0                   |
 | Slug                          | String(128)             | Not Null            |
 | Created At                    | Timestamp               | Current Timestamp   |
 | Updated At                    | Timestamp               | Current Timestamp   |
