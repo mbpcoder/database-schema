@@ -49,3 +49,15 @@
 | Deleted At        | Timestamp               | N         |
 
 ## Comments
+| Name          | Type                    | Nullable  |
+| ------------- |-------------            | -----     |
+| Id            | Integer auto increment  | NN        |
+| Post Id       | Unsigned Integer        | N         |
+| Parent Id     | Unsigned Integer        | N         |
+| Author Id     | Unsigned Integer        | N         |
+| Author Name   | String(64)              | N         |
+| Body          | Text                    | NN        |
+| Created At    | Timestamp               | NN        |
+| Updated At    | Timestamp               | NN        |
+| Published At  | Timestamp               | N         | 
+| Deleted At    | Timestamp               | N         |
