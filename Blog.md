@@ -4,6 +4,7 @@
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
 | Id                            | Unsigned Integer        | auto increment      |
+| [Avatar Id](#files)           | Unsigned Integer        | Null                |
 | Name                          | String(64)              | Not Null            |
 | Username                      | Char(32)                | Null                |
 | Email                         | Char(128)               | Null                |
