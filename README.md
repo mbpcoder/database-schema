@@ -8,7 +8,7 @@
 * You shouldn't go to code for understanding data structure and vice versa
 
 
-[Blog](./Blog.md) database schema
+[Blog database schema](./Blog.md) 
 
-[Shop](./Shop.md) database shcema
+[Shop database shcema](./Shop.md) 
 
