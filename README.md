@@ -1,7 +1,7 @@
 # Database schema fo general application
 
 
-[Blog](../blob/master/Blog.md) database schema
+[Blog](./Blog.md) database schema
 
-[Shop](../blob/master/Shop.md) database shcema
+[Shop](./Shop.md) database shcema
 
