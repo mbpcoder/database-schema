@@ -2,6 +2,7 @@
 
 ## Notes
 * Use plural table name => *users*
+* Always use an  auto increment Id column
 * Use lower case for table columns => *username*
 * Use snake_case for table columns => *created_at*
 * You shouldn't go to code for understanding data structure and vice versa
