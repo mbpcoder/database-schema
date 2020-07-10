@@ -66,7 +66,7 @@
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
 | Id                            | Integer                 | auto increment      |
-| [user Id](#users)             | Unsigned Integer        | Not Null            |
+| [User Id](#users)             | Unsigned Integer        | Not Null            |
 | [Post Id](#posts)             | Unsigned Integer        | Not Null            |
 | Name                          | String(64)              | Not Null            |
 | Path                          | String(64)              | Not Null            |
