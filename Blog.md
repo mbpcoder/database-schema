@@ -3,7 +3,7 @@
 ## Users
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
-| Id                            | Unsigned Integer        | auto increment      |
+| Id                            | Unsigned Integer        | Auto Increment      |
 | [Avatar Id](#files)           | Unsigned Integer        | Null                |
 | Name                          | String(64)              | Not Null            |
 | Username                      | Char(32)                | Null                |
@@ -21,7 +21,7 @@
 ## Categories
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
-| Id                            | Integer                 | auto increment      |
+| Id                            | Unsigned Integer        | Auto Increment     |
 | [Parent Id](#Categories)      | Unsigned Integer        | Null                |
 | Name                          | String(64)              | Not Null            |
 | Slug                          | String(128)             | Not Null            |
@@ -32,7 +32,7 @@
 ## Posts
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
-| Id                            | Integer auto increment  | auto increment      |
+| Id                            | Unsigned Integer        | Auto Increment     |
 | [Author Id](#users)           | Unsigned Integer        | Not Null            |
 | [Category Id](#categories)    | Unsigned Integer        | Not Null            |
 | [Thumbnail Id](#files)        | Unsigned Integer        | Null                |
@@ -52,7 +52,7 @@
 ## Comments
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
-| Id                            | Integer auto increment  | auto increment      |
+| Id                            | Unsigned Integer        | Auto Increment      |
 | [Post Id](#posts)             | Unsigned Integer        | Not Null            |
 | [Reply To Id](#comments)      | Unsigned Integer        | Null                |
 | [Author Id](#users)           | Unsigned Integer        | Null                |
@@ -66,7 +66,7 @@
 ## Files
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
-| Id                            | Integer                 | auto increment      |
+| Id                            | Unsigned Integer        | Auto Increment      |
 | [User Id](#users)             | Unsigned Integer        | Not Null            |
 | [Post Id](#posts)             | Unsigned Integer        | Not Null            |
 | Name                          | String(64)              | Not Null            |
