@@ -40,7 +40,7 @@
 | -------------                 |-------------            | -----               |
 | Id                            | Unsigned Integer        | auto increment      |
 
-## Discount
+## Discounts
 | Name                          | Type                    | Default             |
 | -------------                 |-------------            | -----               |
 | Id                            | Unsigned Integer        | auto increment      |
