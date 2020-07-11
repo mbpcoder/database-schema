@@ -1,4 +1,4 @@
-# Database schema fo general application
+# Database schema for general application
 
 ## Notes
 * Use plural table name => *users*
