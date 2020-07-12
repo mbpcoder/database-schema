@@ -17,6 +17,8 @@
 | Updated At                    | Timestamp               | Current Timestamp   |                             |
 | Deleted At                    | Timestamp               | Null                |                             |
 
+* [Never save password without hashing](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+
 
 ## Categories
 | Name                          | Type                    | Default             | Index                       |
