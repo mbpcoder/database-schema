@@ -13,3 +13,9 @@
 
 [Shop database shcema](./Shop.md) 
 
+## Future development
+* ACL: access control list
+* Ticketing (support)
+* Add SQL file
+* Add migration
+* Add Models
