@@ -27,9 +27,10 @@
 |  2   | [Parent Id](#Categories)      | Unsigned Integer        | Null                | Foreign key on categories   |
 |  3   | Name                          | String(64)              | Not Null            |                             |
 |  4   | Slug                          | String(128)             | Not Null            | Unique                      |
-|  5   | Created At                    | Timestamp               | Current Timestamp   |                             |
-|  6   | Updated At                    | Timestamp               | Current Timestamp   |                             |
-|  7   | Deleted At                    | Timestamp               | Null                |                             |
+|  5   | Disabled                      | Boolean                 | True                |                             |
+|  6   | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  7   | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  8   | Deleted At                    | Timestamp               | Null                |                             |
 
 ## Posts
 |  #   | Name                          | Type                    | Default             | Index                       |
