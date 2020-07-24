@@ -32,9 +32,22 @@
 |  8   | Deleted At                    | Timestamp               | Null                |                             |
 
 ## Products
-| Name                          | Type                    | Default             |
-| -------------                 |-------------            | -----               |
-| Id                            | Unsigned Integer        | auto increment      |
+|  #   | Name                          | Type                    | Default             | Index                       |
+| ---- | -------------                 |-------------            | -----               | -----                       |
+|  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
+|  2   | [Category Id](#categories)    | Unsigned Integer        | Null			       | Foreign key on categories   |
+|  3   | [Thumbnail Id](#files)        | Unsigned Integer        | Null                | Foreign key on files        |
+|  4   | Slug                          | String(32)              | Not Null            | Unique                      |
+|  5   | Name                          | String(128)             | Not Null            |                             |
+|  6   | Summary                       | String(256)             | Null                |                             |
+|  7   | Description                   | Text  			         | Not Null            |                             |
+|  8   | Price                         | Unsigned Integer        | Not Null            |                             |
+|  9   | Quantity                      | Unsigned Integer        | 0                   |                             |
+|  10  | Priority                      | Unsigned Integer        | 0                   |                             |
+|  11  | Disabled                      | Boolean                 | True                | 		                     |
+|  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  14  | Deleted At                    | Timestamp               | Null                |                             |
 
 ## Comments
 |  #   | Name                          | Type                    | Default             | Index                       |
@@ -119,6 +132,7 @@
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  3   | [Post Id](#posts)             | Unsigned Integer        | Not Null            | Foreign key on posts        |
+|  3   | [Product Id](#products)       | Unsigned Integer        | Not Null            | Foreign key on products     |
 |  4   | Name                          | String(64)              | Not Null            |                             |
 |  5   | Path                          | String(64)              | Not Null            | Unique                      |
 |  6   | Published                     | Boolean                 | False               |                             |
