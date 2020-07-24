@@ -85,7 +85,7 @@
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Order Id](#orders)           | Unsigned Integer        | Not Null            | Foreign key on orders       |
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
-|  4   | [State](#order state enum)    | Enum                    | Not Null            |                             |
+|  4   | [State](#order-state-enum)    | Enum                    | Not Null            |                             |
 |  5   | Description                   | Text                    | Null                |                             |
 |  6   | Created At                    | Timestamp               | Current Timestamp   |                             |
 
