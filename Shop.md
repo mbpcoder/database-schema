@@ -145,7 +145,7 @@
 |  12  | Reference Number              					| String(64) 	          | Null                |                             |
 |  13  | Details 	                   					| Text                    | Null                |                             |
 |  14  | Description                   					| Text                    | Null	            |                             |
-|  16  | Created At                    					| Timestamp               | Current Timestamp   |                             |
+|  15  | Created At                    					| Timestamp               | Current Timestamp   |                             |
 
 * Store bank transaction response to details(JSON, XML, ...)
 
