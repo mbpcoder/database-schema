@@ -116,15 +116,15 @@
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
-|  2   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
-|  2   | [Order Id](#orders)           | Unsigned Integer        | Not Null            | Foreign key on orders       |
-|  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
-|  4   | Reference Number              | String(64)              | Null                |                             |
-|  4   | Slug                          | String(64)              | Not Null            |                             |
-|  4   | Title                         | String(128)             | Not Null            |                             |
-|  4   | Description                   | Text                    | Null		           |                             |
-|  12  | Paid At                       | Timestamp               | Null		           |                             |
-|  12  | Expired At                    | Timestamp               | Null		           |                             |
+|  3   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
+|  4   | [Order Id](#orders)           | Unsigned Integer        | Not Null            | Foreign key on orders       |
+|  5   | Amount                        | Unsigned Integer        | Not Null            |                             |
+|  6   | Reference Number              | String(64)              | Null                |                             |
+|  7   | Slug                          | String(64)              | Not Null            |                             |
+|  8   | Title                         | String(128)             | Not Null            |                             |
+|  9   | Description                   | Text                    | Null		           |                             |
+|  10  | Paid At                       | Timestamp               | Null		           |                             |
+|  11  | Expired At                    | Timestamp               | Null		           |                             |
 |  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
 |  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
