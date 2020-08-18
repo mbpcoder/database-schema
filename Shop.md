@@ -129,9 +129,43 @@
 |  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
 ## Payment Transactions
-| Name                          | Type                    | Default             |
-| -------------                 |-------------            | -----               |
-| Id                            | Unsigned Integer        | auto increment      |
+|  #   | Name                          					| Type                    | Default             | Index                       |
+| ---- | -------------                 					|-------------            | -----               | -----                       |
+|  1   | Id                            					| Unsigned Integer        | Auto Increment      | Primary key                 |
+|  2   | [User Id](#users)             					| Unsigned Integer        | Null                | Foreign key on users        |
+|  3   | [Invoice Id](#invoices)       					| Unsigned Integer        | Not Null            | Foreign key on invoices     |
+|  4   | [Payment Method](#transaction-payment-method)  | Enum  			      | Not Null            |                             |
+|  5   | Bank Name                     					| String(64)              | Null                |                             |
+|  6   | Account                       					| String(64)              | Not Null            |                             |
+|  7   | Card Number                   					| String(128)             | Not Null            |                             |
+|  8   | IBAN                          					| String(128)             | Not Null            |                             |
+|  9   | Amount                        					| Unsigned Integer        | Not Null            |                             |
+|  10  | [Status](#transaction-status)     				| Enum  			      | Not Null            |                             |
+|  11  | Tracking Code                 					| String(64) 	          | Not Null            |                             |
+|  12  | Reference Number              					| String(64) 	          | Not Null            |                             |
+|  13  | Details 	                   					| Text                    | Null                |                             |
+|  14  | Description                   					| Text                    | Null	            |                             |
+|  15  | Paid At                       					| Timestamp               | Null	            |                             |
+|  16  | Created At                    					| Timestamp               | Current Timestamp   |                             |
+|  17  | Updated At                    					| Timestamp               | Current Timestamp   |                             |
+
+## Transaction Payment Method
+| Name                          | Description
+| -------------                 |-------------            	|
+| Card                          | 					      	|
+| Account     			        | 					      	|
+| ACH             				| 					      	|
+| IPG                        	| Internet Payment Gateway	|
+| USSD                   		| 					      	|
+| Credit                       	| 					      	|
+| Cash                   		| 					      	|
+
+## Transaction Status
+| Name                          | Description
+| -------------                 |-------------            	|
+| Pending                       | 					      	|
+| Success     			        | 					      	|
+| Failed           				| 					      	|
 
 ## Discounts
 | Name                          | Type                    | Default             |
