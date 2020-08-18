@@ -142,7 +142,7 @@
 |  9   | Amount                        					| Unsigned Integer        | Not Null            |                             |
 |  10  | [Status](#transaction-status)     				| Enum  			      | Not Null            |                             |
 |  11  | Tracking Code                 					| String(64) 	          | Not Null            |                             |
-|  12  | Reference Number              					| String(64) 	          | Not Null            |                             |
+|  12  | Reference Number              					| String(64) 	          | Null                |                             |
 |  13  | Details 	                   					| Text                    | Null                |                             |
 |  14  | Description                   					| Text                    | Null	            |                             |
 |  15  | Paid At                       					| Timestamp               | Null	            |                             |
