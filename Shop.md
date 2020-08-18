@@ -116,7 +116,8 @@
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
-|  2   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
+|  2   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
+|  2   | [Order Id](#orders)           | Unsigned Integer        | Not Null            | Foreign key on orders       |
 |  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
 |  4   | Reference Number              | String(64)              | Null                |                             |
 |  4   | Slug                          | String(64)              | Not Null            |                             |
