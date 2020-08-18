@@ -149,6 +149,8 @@
 |  16  | Created At                    					| Timestamp               | Current Timestamp   |                             |
 |  17  | Updated At                    					| Timestamp               | Current Timestamp   |                             |
 
+* Store bank transaction response to details(JSON, XML, ...)
+
 ## Transaction Payment Method
 | Name                          | Description
 | -------------                 |-------------            	|
