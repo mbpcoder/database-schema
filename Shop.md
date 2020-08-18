@@ -118,15 +118,16 @@
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  3   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
 |  4   | [Order Id](#orders)           | Unsigned Integer        | Not Null            | Foreign key on orders       |
-|  5   | Amount                        | Unsigned Integer        | Not Null            |                             |
-|  6   | Reference Number              | String(64)              | Null                |                             |
-|  7   | Slug                          | String(64)              | Not Null            |                             |
-|  8   | Title                         | String(128)             | Not Null            |                             |
-|  9   | Description                   | Text                    | Null		           |                             |
-|  10  | Paid At                       | Timestamp               | Null		           |                             |
-|  11  | Expired At                    | Timestamp               | Null		           |                             |
-|  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
-|  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  5   | [Discount Id](#discounts)     | Unsigned Integer        | Null		           | Foreign key on discounts    |
+|  6   | Amount                        | Unsigned Integer        | Not Null            |                             |
+|  7   | Reference Number              | String(64)              | Null                |                             |
+|  8   | Slug                          | String(64)              | Not Null            |                             |
+|  9   | Title                         | String(128)             | Not Null            |                             |
+|  10  | Description                   | Text                    | Null		           |                             |
+|  11  | Paid At                       | Timestamp               | Null		           |                             |
+|  12  | Expired At                    | Timestamp               | Null		           |                             |
+|  13  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  14  | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
 ## Payment Transactions
 |  #   | Name                          					| Type                    | Default             | Index                       |
@@ -168,9 +169,20 @@
 | Failed           				| 					      	|
 
 ## Discounts
-| Name                          | Type                    | Default             |
-| -------------                 |-------------            | -----               |
-| Id                            | Unsigned Integer        | auto increment      |
+|  #   | Name                          | Type                    | Default             | Index                       |
+| ---- | -------------                 |-------------            | -----               | -----                       |
+|  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
+|  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
+|  3   | [User Id](#users)             | Unsigned Integer        | Null     	       | Foreign key on users        |
+|  4   | Code                          | String(64)              | Not Null            | Unique                      |
+|  5   | Title                         | String(64)              | Not Null            |                             |
+|  6   | Count				           | Unsigned Integer        | Null		           | 						     |
+|  7   | Used Count			           | Unsigned Integer        | 0		           | 						     |
+|  8   | Amount				           | Unsigned Integer        | Not Null            | 						     |
+|  9   | Description                   | Text                    | Null		           |                             |
+|  10  | Started At                    | Timestamp               | Null		           |                             |
+|  11  | Expired At                    | Timestamp               | Null		           |                             |
+|  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
 
 ## Files
 |  #   | Name                          | Type                    | Default             | Index                       |
