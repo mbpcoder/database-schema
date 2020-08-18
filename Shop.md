@@ -112,9 +112,20 @@
 | Cancel                   		| 					      |
 
 ## Invoices
-| Name                          | Type                    | Default             |
-| -------------                 |-------------            | -----               |
-| Id                            | Unsigned Integer        | auto increment      |
+|  #   | Name                          | Type                    | Default             | Index                       |
+| ---- | -------------                 |-------------            | -----               | -----                       |
+|  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
+|  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
+|  2   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
+|  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
+|  4   | Reference Number              | String(64)              | Null                |                             |
+|  4   | Slug                          | String(64)              | Not Null            |                             |
+|  4   | Title                         | String(128)             | Not Null            |                             |
+|  4   | Description                   | Text                    | Null		           |                             |
+|  12  | Paid At                       | Timestamp               | Null		           |                             |
+|  12  | Expired At                    | Timestamp               | Null		           |                             |
+|  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
 ## Payment Transactions
 | Name                          | Type                    | Default             |
