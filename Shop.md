@@ -122,7 +122,7 @@
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  6   | Amount                        | Unsigned Integer        | Not Null            |                             |
 |  7   | Reference Number              | String(64)              | Null                |                             |
-|  8   | Slug                          | String(64)              | Not Null            |                             |
+|  8   | Slug                          | String(128)             | Not Null            |                             |
 |  9   | Title                         | String(128)             | Not Null            |                             |
 |  10  | Description                   | Text                    | Null		           |                             |
 |  11  | Paid At                       | Timestamp               | Null		           |                             |
@@ -139,7 +139,7 @@ payback money to users
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
 |  5   | Reference Number              | String(64)              | Null                |                             |
-|  6   | Slug                          | String(64)              | Not Null            |                             |
+|  6   | Slug                          | String(128)             | Not Null            |                             |
 |  7   | Title                         | String(128)             | Not Null            |                             |
 |  8   | Description                   | Text                    | Null		           |                             |
 |  9   | Paid At                       | Timestamp               | Null		           |                             |
