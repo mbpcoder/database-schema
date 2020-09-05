@@ -11,13 +11,14 @@
 |  6   | Email Verified At             | Timestamp               | Current Timestamp   |                             |
 |  7   | Mobile                        | Char(16)                | Null                | Unique                      |
 |  8   | Mobile Verified At            | Timestamp               | Current Timestamp   |                             |
-|  9   | Password                      | String(64)              | Not Null            |                             |
-|  10  | Is Admin                      | Boolean                 | False               |                             |
-|  11  | Disabled                      | Boolean                 | True                |                             |
-|  12  | Description                   | Text                    | Null                |                             |
-|  13  | Created At                    | Timestamp               | Current Timestamp   |                             |
-|  14  | Updated At                    | Timestamp               | Current Timestamp   |                             |
-|  15  | Deleted At                    | Timestamp               | Null                |                             |
+|  9   | Balance                       | Unsigned Integer        | 0                   |                             |
+|  10  | Password                      | String(64)              | Not Null            |                             |
+|  11  | Is Admin                      | Boolean                 | False               |                             |
+|  12  | Disabled                      | Boolean                 | True                |                             |
+|  13  | Description                   | Text                    | Null                |                             |
+|  14  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  15  | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  16  | Deleted At                    | Timestamp               | Null                |                             |
 
 * [Never save password without hashing](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 
@@ -106,44 +107,42 @@
 
 ## Order State Enum
 | Name                          | Description
-| -------------                 |-------------    |
+| -------------                 |------------- 			  |
 | Waiting                       | 					      |
-| Paying           			        | 					      |
-| Paid                   				| 					      |
+| Paying       			        | 					      |
+| Paid             				| 					      |
 | Sent                        	| 					      |
-| Canceled                   		| 					      |
+| Canceled                 		| 					      |
 
 ## Invoices
 |  #   | Name                          | Type                    | Default             | Index                       |
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
-|  3   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
-|  4   | [Order Id](#orders)           | Unsigned Integer        | Not Null            | Foreign key on orders       |
-|  5   | [Discount Id](#discounts)     | Unsigned Integer        | Null		             | Foreign key on discounts    |
+|  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  6   | Amount                        | Unsigned Integer        | Not Null            |                             |
 |  7   | Reference Number              | String(64)              | Null                |                             |
 |  8   | Slug                          | String(64)              | Not Null            |                             |
 |  9   | Title                         | String(128)             | Not Null            |                             |
-|  10  | Description                   | Text                    | Null		             |                             |
-|  11  | Paid At                       | Timestamp               | Null		             |                             |
-|  12  | Expired At                    | Timestamp               | Null		             |                             |
+|  10  | Description                   | Text                    | Null		           |                             |
+|  11  | Paid At                       | Timestamp               | Null		           |                             |
+|  12  | Expired At                    | Timestamp               | Null		           |                             |
 |  13  | Created At                    | Timestamp               | Current Timestamp   |                             |
 |  14  | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
-## Refunds 
+## Refunds
 payback money to users
 |  #   | Name                          | Type                    | Default             | Index                       |
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
-|  3   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
+|  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
 |  5   | Reference Number              | String(64)              | Null                |                             |
 |  6   | Slug                          | String(64)              | Not Null            |                             |
 |  7   | Title                         | String(128)             | Not Null            |                             |
-|  8   | Description                   | Text                    | Null		             |                             |
-|  9   | Paid At                       | Timestamp               | Null		             |                             |
+|  8   | Description                   | Text                    | Null		           |                             |
+|  9   | Paid At                       | Timestamp               | Null		           |                             |
 |  10  | Created At                    | Timestamp               | Current Timestamp   |                             |
 
 ## Payment Transactions
@@ -184,6 +183,18 @@ payback money to users
 | Pending                       | 					      	|
 | Success     			        | 					      	|
 | Failed           				| 					      	|
+
+## Accounting Transactions
+|  #   | Name                          | Type                    | Default             | Index                       |
+| ---- | -------------                 |-------------            | -----               | -----                       |
+|  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
+|  2   | [User Id](#users)             | Unsigned Integer        | Not Null   	       | Foreign key on users        |
+|  3   | [Invoice Id](#invoices) 	   | Unsigned Integer        | Null                | Foreign key on invoices     |
+|  4   | [Order Id](#orders)           | Unsigned Integer        | Null     	       | Foreign key on orders       |
+|  5   | Increase			           | Unsigned Integer        | Null		           | 						     |
+|  6   | Decrease			           | Unsigned Integer        | 0		           | 						     |
+|  7   | Description                   | Text                    | Null		           |                             |
+|  8   | Created At                    | Timestamp               | Current Timestamp   |                             |
 
 ## Discounts
 |  #   | Name                          | Type                    | Default             | Index                       |
