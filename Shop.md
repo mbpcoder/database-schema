@@ -74,10 +74,10 @@
 |  4   | Item Count                    | Unsigned Integer        | 0                   |                             |
 |  5   | Items Price                   | Unsigned Integer        | 0                   |                             |
 |  6   | Delivery Cost                 | Unsigned Integer        | 0                   |                             |
-|  7   | Cash On Delivery              | Boolean                 | False               |                             |
-|  8   | Value Added Tax               | Unsigned Integer        | 0                   |                             |
-|  9   | Discount                      | Unsigned Integer        | 0                   |                             |
-|  10  | Total Price                   | Unsigned Integer        | 0                   |                             |
+|  7   | Value Added Tax               | Unsigned Integer        | 0                   |                             |
+|  8   | Discount                      | Unsigned Integer        | 0                   |                             |
+|  9   | Total Price                   | Unsigned Integer        | 0                   |                             |
+|  10  | Cash On Delivery              | Boolean                 | False               |                             |
 |  11  | Pending                       | Boolean                 | True                | 		                     |
 |  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
 |  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
