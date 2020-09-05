@@ -9,9 +9,9 @@
 * You shouldn't go to code for understanding data structure and vice versa
 
 
-[Blog database schema](./Blog.md) 
+[Blog database schema](./shop/Blog.md)
 
-[Shop database shcema](./Shop.md) 
+[Shop database schema](./shop)
 
 ## Future development
 * ACL: access control list
