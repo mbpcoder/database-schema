@@ -106,12 +106,12 @@
 
 ## Order State Enum
 | Name                          | Description
-| -------------                 |-------------            |
+| -------------                 |-------------    |
 | Waiting                       | 					      |
-| Paying     			        | 					      |
-| Paid             				| 					      |
+| Paying           			        | 					      |
+| Paid                   				| 					      |
 | Sent                        	| 					      |
-| Cancel                   		| 					      |
+| Canceled                   		| 					      |
 
 ## Invoices
 |  #   | Name                          | Type                    | Default             | Index                       |
