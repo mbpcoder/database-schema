@@ -121,7 +121,7 @@
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  6   | Amount                        | Unsigned Integer        | Not Null            |                             |
-|  7   | Tracking Code  	           | String(64)              | Not Null            |                             |
+|  7   | Tracking Code  	           | String(64)              | Not Null            | Unique                      |
 |  8   | Slug                          | String(128)             | Not Null            | Unique                      |
 |  9   | Title                         | String(128)             | Not Null            |                             |
 |  10  | Description                   | Text                    | Null		           |                             |
@@ -138,7 +138,7 @@ payback money to users
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
-|  5   | Tracking Code  	           | String(64)              | Not Null            |                             |
+|  5   | Tracking Code  	           | String(64)              | Not Null            | Unique                      |
 |  6   | Slug                          | String(128)             | Not Null            | Unique                      |
 |  7   | Title                         | String(128)             | Not Null            |                             |
 |  8   | Description                   | Text                    | Null		           |                             |
