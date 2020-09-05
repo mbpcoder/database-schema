@@ -8,14 +8,16 @@
 |  3   | Name                          | String(64)              | Not Null            |                             |
 |  4   | Username                      | Char(32)                | Null                | Unique                      |
 |  5   | Email                         | Char(128)               | Null                | Unique                      |
-|  6   | Mobile                        | Char(16)                | Null                | Unique                      |
-|  7   | Password                      | String(64)              | Not Null            |                             |
-|  8   | Is Admin                      | Boolean                 | False               |                             |
-|  9   | Disabled                      | Boolean                 | True                |                             |
-|  10  | Description                   | Text                    | Null                |                             |
-|  11  | Created At                    | Timestamp               | Current Timestamp   |                             |
-|  12  | Updated At                    | Timestamp               | Current Timestamp   |                             |
-|  13  | Deleted At                    | Timestamp               | Null                |                             |
+|  6   | Email Verified At             | Timestamp               | Current Timestamp   |                             |
+|  7   | Mobile                        | Char(16)                | Null                | Unique                      |
+|  8   | Mobile Verified At            | Timestamp               | Current Timestamp   |                             |
+|  9   | Password                      | String(64)              | Not Null            |                             |
+|  10  | Is Admin                      | Boolean                 | False               |                             |
+|  11  | Disabled                      | Boolean                 | True                |                             |
+|  12  | Description                   | Text                    | Null                |                             |
+|  13  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  14  | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  15  | Deleted At                    | Timestamp               | Null                |                             |
 
 * [Never save password without hashing](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 
