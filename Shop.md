@@ -121,7 +121,7 @@
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  6   | Amount                        | Unsigned Integer        | Not Null            |                             |
-|  7   | Reference Number              | String(64)              | Null                |                             |
+|  7   | Tracking Code  	           | String(64)              | Not Null            |                             |
 |  8   | Slug                          | String(128)             | Not Null            | Unique                      |
 |  9   | Title                         | String(128)             | Not Null            |                             |
 |  10  | Description                   | Text                    | Null		           |                             |
@@ -138,7 +138,7 @@ payback money to users
 |  2   | [Issuer Id](#users)           | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  3   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
 |  4   | Amount                        | Unsigned Integer        | Not Null            |                             |
-|  5   | Reference Number              | String(64)              | Null                |                             |
+|  5   | Tracking Code  	           | String(64)              | Not Null            |                             |
 |  6   | Slug                          | String(128)             | Not Null            | Unique                      |
 |  7   | Title                         | String(128)             | Not Null            |                             |
 |  8   | Description                   | Text                    | Null		           |                             |
@@ -153,16 +153,15 @@ payback money to users
 |  3   | [Invoice Id](#invoices)       					| Unsigned Integer        | Not Null            | Foreign key on invoices     |
 |  4   | [Payment Method](#transaction-payment-method)  | Enum  			      | Not Null            |                             |
 |  5   | Bank Name                     					| String(64)              | Null                |                             |
-|  6   | Account                       					| String(64)              | Not Null            |                             |
-|  7   | Card Number                   					| String(128)             | Not Null            |                             |
-|  8   | IBAN                          					| String(128)             | Not Null            |                             |
+|  6   | Account                       					| String(64)              | Null  	            |                             |
+|  7   | Card Number                   					| String(128)             | Null 	            |                             |
+|  8   | IBAN                          					| String(128)             | Null  	            |                             |
 |  9   | Amount                        					| Unsigned Integer        | Not Null            |                             |
 |  10  | [Status](#transaction-status)     				| Enum  			      | Not Null            |                             |
-|  11  | Tracking Code                 					| String(64) 	          | Not Null            |                             |
-|  12  | Reference Number              					| String(64) 	          | Null                |                             |
-|  13  | Details 	                   					| Text                    | Null                |                             |
-|  14  | Description                   					| Text                    | Null	            |                             |
-|  15  | Created At                    					| Timestamp               | Current Timestamp   |                             |
+|  11  | Reference Number              					| String(64) 	          | Null                |                             |
+|  12  | Details 	                   					| Text                    | Null                |                             |
+|  13  | Description                   					| Text                    | Null	            |                             |
+|  14  | Created At                    					| Timestamp               | Current Timestamp   |                             |
 
 * Store bank transaction response to details(JSON, XML, ...)
 
