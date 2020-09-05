@@ -26,7 +26,7 @@
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Parent Id](#Categories)      | Unsigned Integer        | Null                | Foreign key on categories   |
-|  3   | Name                          | String(64)              | Not Null            |                             |
+|  3   | Name                          | String(128)             | Not Null            |                             |
 |  4   | Slug                          | String(128)             | Not Null            | Unique                      |
 |  5   | Disabled                      | Boolean                 | True                |                             |
 |  6   | Created At                    | Timestamp               | Current Timestamp   |                             |
@@ -39,8 +39,8 @@
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [Category Id](#categories)    | Unsigned Integer        | Null			       | Foreign key on categories   |
 |  3   | [Thumbnail Id](#files)        | Unsigned Integer        | Null                | Foreign key on files        |
-|  4   | Slug                          | String(32)              | Not Null            | Unique                      |
-|  5   | Name                          | String(128)             | Not Null            |                             |
+|  4   | Name                          | String(128)             | Not Null            |                             |
+|  5   | Slug                          | String(128)              | Not Null            | Unique                     |
 |  6   | Summary                       | String(256)             | Null                |                             |
 |  7   | Description                   | Text  			         | Not Null            |                             |
 |  8   | Price                         | Unsigned Integer        | Not Null            |                             |
