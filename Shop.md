@@ -212,7 +212,7 @@ payback money to users
 |  6   | Type                          | String(32)              | Not Null            | MIME type                   |
 |  7   | Path                          | String(128)             | Not Null            | Unique                      |
 |  8   | Hash                          | String(32)              | Not Null            |                             |
-|  9   | Published                     | Boolean                 | False               |                             |
+|  9   | Disabled                      | Boolean                 | False               |                             |
 |  10  | Priority                      | Unsigned Integer        | 0                   |                             |
 |  11  | Created At                    | Timestamp               | Current Timestamp   |                             |
 |  12  | Updated At                    | Timestamp               | Current Timestamp   |                             |
