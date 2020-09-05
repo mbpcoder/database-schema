@@ -216,14 +216,13 @@ payback money to users
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
 |  2   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
-|  3   | [Post Id](#posts)             | Unsigned Integer        | Null                | Foreign key on posts        |
-|  4   | [Product Id](#products)       | Unsigned Integer        | Null                | Foreign key on products     |
-|  5   | Name                          | String(64)              | Not Null            |                             |
-|  6   | Type                          | String(32)              | Not Null            | MIME type                   |
-|  7   | Path                          | String(128)             | Not Null            | Unique                      |
-|  8   | Hash                          | String(32)              | Not Null            |                             |
-|  9   | Disabled                      | Boolean                 | False               |                             |
-|  10  | Priority                      | Unsigned Integer        | 0                   |                             |
-|  11  | Created At                    | Timestamp               | Current Timestamp   |                             |
-|  12  | Updated At                    | Timestamp               | Current Timestamp   |                             |
-|  13  | Deleted At                    | Timestamp               | Null                |                             |
+|  3   | [Product Id](#products)       | Unsigned Integer        | Null                | Foreign key on products     |
+|  4   | Name                          | String(64)              | Not Null            |                             |
+|  5   | Type                          | String(32)              | Not Null            | MIME type                   |
+|  6   | Path                          | String(128)             | Not Null            | Unique                      |
+|  7   | Hash                          | String(32)              | Not Null            |                             |
+|  8   | Disabled                      | Boolean                 | False               |                             |
+|  9   | Priority                      | Unsigned Integer        | 0                   |                             |
+|  10  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  11  | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  12  | Deleted At                    | Timestamp               | Null                |                             |
