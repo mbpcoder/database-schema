@@ -207,7 +207,7 @@ payback money to users
 |  7   | Used Count			           | Unsigned Integer        | 0		           | 						     |
 |  8   | Amount				           | Unsigned Integer        | Not Null            | 						     |
 |  9   | Description                   | Text                    | Null		           |                             |
-|  10  | Started At                    | Timestamp               | Null		           |                             |
+|  10  | Started At                    | Timestamp               | Current Timestamp   |                             |
 |  11  | Expired At                    | Timestamp               | Null		           |                             |
 |  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
 
