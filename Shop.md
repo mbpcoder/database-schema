@@ -205,12 +205,15 @@ payback money to users
 |  #   | Name                          | Type                    | Default             | Index                       |
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
-|  2   | [User Id](#users)             | Unsigned Integer        | Not Null            | Foreign key on users        |
-|  3   | [Post Id](#posts)             | Unsigned Integer        | Not Null            | Foreign key on posts        |
-|  3   | [Product Id](#products)       | Unsigned Integer        | Not Null            | Foreign key on products     |
+|  2   | [User Id](#users)             | Unsigned Integer        | Null                | Foreign key on users        |
+|  3   | [Post Id](#posts)             | Unsigned Integer        | Null                | Foreign key on posts        |
+|  3   | [Product Id](#products)       | Unsigned Integer        | Null                | Foreign key on products     |
 |  4   | Name                          | String(64)              | Not Null            |                             |
-|  5   | Path                          | String(64)              | Not Null            | Unique                      |
-|  6   | Published                     | Boolean                 | False               |                             |
-|  7   | Created At                    | Timestamp               | Current Timestamp   |                             |
-|  8   | Updated At                    | Timestamp               | Current Timestamp   |                             |
-|  9   | Deleted At                    | Timestamp               | Null                |                             |
+|  5   | Type                          | String(32)              | Not Null            | MIME type                   |
+|  6   | Path                          | String(64)              | Not Null            | Unique                      |
+|  7   | Hash                          | String(32)              | Not Null            |                             |
+|  8   | Published                     | Boolean                 | False               |                             |
+|  9   | Priority                      | Unsigned Integer        | 0                   |                             |
+|  10  | Created At                    | Timestamp               | Current Timestamp   |                             |
+|  11  | Updated At                    | Timestamp               | Current Timestamp   |                             |
+|  12  | Deleted At                    | Timestamp               | Null                |                             |
