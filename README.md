@@ -9,7 +9,7 @@
 * You shouldn't go to code for understanding data structure and vice versa
 
 
-[Blog database schema](./shop/Blog.md)
+[Blog database schema](./Blog.md)
 
 [Shop database schema](./shop)
 
