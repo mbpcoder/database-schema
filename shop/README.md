@@ -79,7 +79,7 @@
 |  8   | Discount                      | Unsigned Integer        | 0                   |                             |
 |  9   | Total Price                   | Unsigned Integer        | 0                   |                             |
 |  10  | Cash On Delivery              | Boolean                 | False               |                             |
-|  11  | Pending                       | Boolean                 | True                | 		                     |
+|  11  | [State](#order-state-enum)    | Enum                    | Not Null            |                             |
 |  12  | Created At                    | Timestamp               | Current Timestamp   |                             |
 |  13  | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
@@ -95,7 +95,7 @@
 |  7   | Created At                    | Timestamp               | Current Timestamp   |                             |
 |  8   | Updated At                    | Timestamp               | Current Timestamp   |                             |
 
-## Order Status
+## Order Activity
 |  #   | Name                          | Type                    | Default             | Index                       |
 | ---- | -------------                 |-------------            | -----               | -----                       |
 |  1   | Id                            | Unsigned Integer        | Auto Increment      | Primary key                 |
